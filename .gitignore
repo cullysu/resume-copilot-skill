@@ -1,0 +1,11 @@
+.DS_Store
+Thumbs.db
+*.tmp
+*.log
+node_modules/
+dist/
+.env
+.env.*
+resume-drafts/
+private/
+personal/
