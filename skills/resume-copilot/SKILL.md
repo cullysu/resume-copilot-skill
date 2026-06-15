@@ -1,6 +1,6 @@
 ---
 name: resume-copilot
-description: End-to-end resume creation and optimization workflow for first-time or uncertain resume writers. Use when the user wants help writing a resume/CV from scratch, beautifying or structuring experience, turning raw work history into strong resume bullets, choosing resume templates, tailoring a resume to a job description, improving ATS readability, using Reactive Resume/OpenResume/Resume Matcher, or producing polished Markdown/PDF-ready resume content.
+description: End-to-end resume creation and optimization workflow for first-time or uncertain resume writers. Use when the user wants help writing a resume/CV from scratch, beautifying or structuring experience, turning raw work history into strong resume bullets, choosing resume templates, tailoring a resume to a job description, improving ATS readability, using Reactive Resume/OpenResume/Resume Matcher, or producing polished print-ready PDF/DOCX/Markdown resume content.
 ---
 
 # Resume Copilot
@@ -65,8 +65,10 @@ When the user wants a polished output or has no template preference:
 - Prefer Reactive Resume for template selection, visual polish, PDF/DOCX export, and ongoing editing.
 - Prefer OpenResume when the user wants a simpler browser-local builder/parser or a strongly ATS-safe single-page style.
 - Keep formatting ATS-readable: avoid text in images, excessive columns, hidden text, icon-only skill labels, and unusual section names.
+- If the user says Markdown is hard to view, asks for printing, provides a headshot, or complains about spacing/blank space, produce a print-ready PDF/DOCX/HTML package instead of only giving content.
 
 Use `references/tool-routing.md` for exact routing and local-tool handling.
+Use `references/print-layout-rules.md` before creating or revising printable A4 resumes, visual templates, two-column layouts, or resumes with photos.
 
 ### 5. Tailor To A Job Description
 
@@ -101,9 +103,12 @@ Before finalizing, check:
 - Skills named in the summary appear in experience/projects.
 - The document is scannable in 30 seconds.
 - ATS-sensitive output uses standard section headings and plain text.
+- Print-ready output is visually inspected as an A4 preview, fits one page when required, has no clipped bottom content, and balances left/right column height without filler.
+- Top-of-page content contains only strong job-relevant signals; remove weak tags, "interview expansion" notes, generic keyword blocks, and attachment reminders from high-visibility areas.
 
 ## References
 
 - `references/intake-and-templates.md`: intake worksheet and output templates.
 - `references/resume-writing-rules.md`: bullet rules, truthfulness, metrics, ATS guidance.
+- `references/print-layout-rules.md`: A4 print layout, photo placement, density, typography, and visual QA.
 - `references/tool-routing.md`: when and how to use Reactive Resume, OpenResume, and Resume Matcher.
